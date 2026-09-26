@@ -1,0 +1,10 @@
+/* ---- breed demo ----
+   Generic scan-widget shell (card, dropzone, panel, spinner, ...) lives in
+   ../../styles/scan.css and is shared with the emotion demo. */
+.prob-bars{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px; }
+.prob-bar{ display:grid; grid-template-columns: 1fr auto; gap:2px 12px; align-items:center; font-size:0.9rem; }
+.prob-bar-label{ font-family:'Fredoka',sans-serif; font-weight:500; }
+.prob-bar-pct{ text-align:right; color:var(--ink-soft); font-variant-numeric: tabular-nums; }
+.prob-bar-track{ grid-column: 1 / -1; height:10px; border-radius:999px; background:var(--bg-alt); border:1px solid var(--line); overflow:hidden; }
+.prob-bar-fill{ height:100%; border-radius:999px; background:var(--primary); transition: width .5s ease; }
+@media (prefers-reduced-motion: reduce){ .prob-bar-fill{ transition:none; } }

@@ -16,7 +16,7 @@ describe("Home page", () => {
     vi.stubEnv("NEXT_PUBLIC_GATEWAY_URL", "");
     await renderApp();
 
-    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Know what your cat is really feeling.");
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Know what your cat is really feeling");
     expect(screen.getByText("Want to know what they're really feeling?")).toBeInTheDocument();
     expect(screen.queryByText("Choose a photo of your cat")).not.toBeInTheDocument();
   });

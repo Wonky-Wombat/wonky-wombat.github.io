@@ -9,7 +9,7 @@ export default function Hero() {
         <div>
           <span className="eyebrow">AI Cat Mood Scanner</span>
           <h1>
-            Know what your cat is <em>really</em> feeling.
+            Know what your cat is <em>really</em> feeling
           </h1>
           <p className="hero-sub">
             Snap a photo and Catspace reads relaxed, happy, curious, fearful, or aggressive in seconds, then logs it

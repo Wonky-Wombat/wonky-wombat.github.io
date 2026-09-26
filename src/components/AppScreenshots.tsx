@@ -10,7 +10,7 @@ const SCREENSHOTS = [
 export default function AppScreenshots() {
   return (
     <section style={{ paddingTop: 0 }}>
-      <SectionHead kicker="Inside the app" title="See Catspace in action." />
+      <SectionHead kicker="Inside the app" title="See Catspace in action" />
       <div className="screenshot-row">
         {SCREENSHOTS.map((shot) => (
           <img key={shot.src} src={shot.src} alt={shot.alt} loading="lazy" />

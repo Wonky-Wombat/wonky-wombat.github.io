@@ -4,7 +4,7 @@ import SectionHead from "./SectionHead";
 export default function Pricing() {
   return (
     <section style={{ paddingTop: 0 }}>
-      <SectionHead kicker="Pricing" title="Free to start, upgrade if you're hooked." />
+      <SectionHead kicker="Pricing" title="Free to start, upgrade if you're hooked" />
       <div className="pricing">
         {PLANS.map((plan) => (
           <div className={plan.highlighted ? "plan pro" : "plan"} key={plan.tag}>

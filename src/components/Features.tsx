@@ -4,7 +4,7 @@ import SectionHead from "./SectionHead";
 export default function Features() {
   return (
     <section style={{ paddingTop: 0 }}>
-      <SectionHead kicker="What's inside" title="Built for cat people, not spreadsheets." />
+      <SectionHead kicker="What's inside" title="Built for cat people, not spreadsheets" />
       <div className="features">
         {FEATURES.map((feature) => (
           <div className="feature" key={feature.title}>

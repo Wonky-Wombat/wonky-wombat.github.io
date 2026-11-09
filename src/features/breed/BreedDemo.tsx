@@ -34,7 +34,7 @@ export default function BreedDemo({ gatewayUrl }: { gatewayUrl: string }) {
 
   return (
     <section id="breed" style={{ paddingTop: 0 }}>
-      <SectionHead kicker="Bonus tool · free, right here" title="What breed is your cat, really?" />
+      <SectionHead title="What breed is your cat, really?" />
       <div className="scan-card">
         <div className="scan-layout">
           {previewUrl ? (

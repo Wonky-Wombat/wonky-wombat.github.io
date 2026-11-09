@@ -15,6 +15,10 @@ export const MOODS: readonly Mood[] = [
   { label: "Aggressive", colorVar: "--mood-aggressive", cues: "Pinned ears, fixed stare, coiled body." },
 ];
 
+export function moodImage(label: MoodLabel): string {
+  return `/moods/${label.toLowerCase()}.png`;
+}
+
 export function moodColorVar(label: MoodLabel): Mood["colorVar"] {
   // MOODS covers every MoodLabel, so the lookup cannot miss.
   return MOODS.find((mood) => mood.label === label)!.colorVar;

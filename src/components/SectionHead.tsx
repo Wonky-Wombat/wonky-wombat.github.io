@@ -1,8 +1,10 @@
-export default function SectionHead({ kicker, title }: { kicker: string; title: string }) {
+import type { ReactNode } from "react";
+
+export default function SectionHead({ title, sub }: { title: ReactNode; sub?: string }) {
   return (
     <div className="section-head">
-      <div className="kicker">{kicker}</div>
       <h2>{title}</h2>
+      {sub && <p>{sub}</p>}
     </div>
   );
 }

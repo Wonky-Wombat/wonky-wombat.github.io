@@ -1,15 +1,20 @@
-import type { CSSProperties } from "react";
-import { MOODS } from "../data/moods";
+import { MOODS, moodImage } from "../data/moods";
 import SectionHead from "./SectionHead";
 
 export default function MoodCards() {
   return (
-    <section style={{ paddingTop: 0 }}>
-      <SectionHead kicker="Five reads, one scan" title="The moods Catspace looks for" />
+    <section>
+      <SectionHead
+        title={
+          <>
+            Five Moods, <em>One Diary</em>
+          </>
+        }
+      />
       <div className="moods">
         {MOODS.map((mood) => (
-          <div className="mood-card" key={mood.label} style={{ "--dot": `var(${mood.colorVar})` } as CSSProperties}>
-            <div className="dot" />
+          <div className="mood-card" key={mood.label}>
+            <img src={moodImage(mood.label)} alt="" loading="lazy" width={360} height={360} />
             <h3>{mood.label}</h3>
             <p>{mood.cues}</p>
           </div>

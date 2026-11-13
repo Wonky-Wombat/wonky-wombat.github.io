@@ -9,6 +9,7 @@ describe("Home page", () => {
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("A Mood Diary For Your Cat");
     expect(screen.getByText("New in 3.0.0")).toBeInTheDocument();
     expect(screen.getByRole("img", { name: /Log Mood screen/ })).toBeInTheDocument();
+    expect(screen.getByLabelText("Catspace app preview video")).toHaveAttribute("src", "/video/catspace-preview.mp4");
     expect(screen.getByRole("link", { name: "Get Catspace Pro" })).toHaveAttribute(
       "href",
       "https://apps.apple.com/app/id6748916843",
